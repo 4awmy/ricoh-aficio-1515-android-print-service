@@ -1,0 +1,16 @@
+R_DEF: Internal format may change without notice
+local
+id ipAddressEditText
+id ipAddressInputLayout
+id saveButton
+id titleTextView
+layout activity_config
+string app_name
+string config_title
+string invalid_ip_error
+string ip_address_hint
+string ip_address_label
+string ip_saved_success
+string save_button
+style Theme.RicohPrintService
+xml print_service_config

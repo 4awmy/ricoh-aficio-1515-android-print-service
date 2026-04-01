@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.ricoh.printservice.app-merged_res-31:/xml_print_service_config.xml.flat",
+        "source": "com.ricoh.printservice.app-main-33:/xml/print_service_config.xml"
+    },
+    {
+        "merged": "com.ricoh.printservice.app-merged_res-31:/layout_activity_config.xml.flat",
+        "source": "com.ricoh.printservice.app-main-33:/layout/activity_config.xml"
+    }
+]

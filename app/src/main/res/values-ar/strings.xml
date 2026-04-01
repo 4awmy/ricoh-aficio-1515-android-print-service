@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">خدمة طباعة ريكو</string>
+    <string name="config_title">إعدادات الطابعة</string>
+    <string name="ip_address_label">عنوان IP للطابعة</string>
+    <string name="ip_address_hint">مثلاً 192.168.0.50</string>
+    <string name="save_button">حفظ</string>
+    <string name="ip_saved_success">تم حفظ عنوان IP بنجاح</string>
+    <string name="invalid_ip_error">يرجى إدخال عنوان IP صحيح</string>
+</resources>

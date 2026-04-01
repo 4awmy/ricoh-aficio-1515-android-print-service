@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.ricoh.printservice.PrintServiceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.ricoh.printservice.PrintServiceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.ricoh.printservice.html">com.ricoh.printservice</a> &gt; PrintServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.062s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">75%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Failed tests</a>
+</li>
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="RicohPrintService should send data to printer via socket"></a>
+<h3 class="failures">RicohPrintService should send data to printer via socket</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: Unsupported address type
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at com.ricoh.printservice.PrintServiceTest$RicohPrintService should send data to printer via socket$1.invoke(PrintServiceTest.kt:129)
+	at com.ricoh.printservice.PrintServiceTest$RicohPrintService should send data to printer via socket$1.invoke(PrintServiceTest.kt:129)
+	at io.mockk.impl.eval.RecordedBlockEvaluator$record$block$1.invoke(RecordedBlockEvaluator.kt:24)
+	at io.mockk.impl.eval.RecordedBlockEvaluator$enhanceWithRethrow$1.invoke(RecordedBlockEvaluator.kt:76)
+	at io.mockk.impl.recording.JvmAutoHinter.autoHint(JvmAutoHinter.kt:23)
+	at io.mockk.impl.eval.RecordedBlockEvaluator.record(RecordedBlockEvaluator.kt:39)
+	at io.mockk.impl.eval.EveryBlockEvaluator.every(EveryBlockEvaluator.kt:30)
+	at io.mockk.MockKDsl.internalEvery(API.kt:94)
+	at io.mockk.MockKKt.every(MockK.kt:143)
+	at com.ricoh.printservice.PrintServiceTest.RicohPrintService should send data to printer via socket(PrintServiceTest.kt:129)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:54)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:183)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">PclEncoder should correctly encode Arabic-like pattern</td>
+<td class="success">0.121s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">PclEncoder should correctly encode a black pixel</td>
+<td class="success">1.538s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">PclEncoder should generate correct PCL header and footer</td>
+<td class="success">0.113s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">RicohPrintService should send data to printer via socket</td>
+<td class="failures">0.290s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>WARNING: A Java agent has been loaded dynamically (C:\Users\omarh\.gradle\caches\9.0-milestone-1\transforms\457220a6dce58e18e45ec50e4fceb412\transformed\jetified-byte-buddy-agent-1.14.6.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Apr 01, 2026 6:48:19 PM io.mockk.impl.log.JULLogger warn
+WARNING: Failed to transform class java/lang/Object
+java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at io.mockk.proxy.jvm.transformation.InliningClassTransformer.transform(InliningClassTransformer.kt:81)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at io.mockk.proxy.jvm.transformation.JvmInlineInstrumentation.retransform(JvmInlineInstrumentation.kt:28)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation$execute$1.invoke(RetransformInlineInstrumentation.kt:19)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation$execute$1.invoke(RetransformInlineInstrumentation.kt:16)
+	at io.mockk.proxy.common.transformation.ClassTransformationSpecMap.applyTransformation(ClassTransformationSpecMap.kt:41)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation.execute(RetransformInlineInstrumentation.kt:16)
+	at io.mockk.proxy.jvm.ProxyMaker.inline(ProxyMaker.kt:90)
+	at io.mockk.proxy.jvm.ProxyMaker.proxy(ProxyMaker.kt:34)
+	at io.mockk.impl.instantiation.JvmMockFactory.newProxy(JvmMockFactory.kt:34)
+	at io.mockk.impl.instantiation.AbstractMockFactory.newProxy$default(AbstractMockFactory.kt:24)
+	at io.mockk.impl.instantiation.AbstractMockFactory.mockk(AbstractMockFactory.kt:59)
+	at com.ricoh.printservice.PrintServiceTest.PclEncoder should correctly encode a black pixel(PrintServiceTest.kt:299)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:54)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:183)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+Apr 01, 2026 6:48:19 PM io.mockk.impl.log.JULLogger warn
+WARNING: Failed to transform class java/net/Socket
+java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at io.mockk.proxy.jvm.transformation.InliningClassTransformer.transform(InliningClassTransformer.kt:81)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at io.mockk.proxy.jvm.transformation.JvmInlineInstrumentation.retransform(JvmInlineInstrumentation.kt:28)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation$execute$1.invoke(RetransformInlineInstrumentation.kt:19)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation$execute$1.invoke(RetransformInlineInstrumentation.kt:16)
+	at io.mockk.proxy.common.transformation.ClassTransformationSpecMap.applyTransformation(ClassTransformationSpecMap.kt:41)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation.execute(RetransformInlineInstrumentation.kt:16)
+	at io.mockk.proxy.jvm.ConstructorProxyMaker.constructorProxy(ConstructorProxyMaker.kt:29)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory$ConstructorInvocationHandler.push(JvmConstructorMockFactory.kt:205)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory.constructorMockk(JvmConstructorMockFactory.kt:261)
+	at com.ricoh.printservice.PrintServiceTest.RicohPrintService should send data to printer via socket(PrintServiceTest.kt:343)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:54)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:183)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+Apr 01, 2026 6:48:20 PM io.mockk.impl.log.JULLogger warn
+WARNING: Failed to transform class java/net/Socket
+java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at io.mockk.proxy.jvm.transformation.InliningClassTransformer.transform(InliningClassTransformer.kt:81)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at io.mockk.proxy.jvm.transformation.JvmInlineInstrumentation.retransform(JvmInlineInstrumentation.kt:28)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation$execute$1.invoke(RetransformInlineInstrumentation.kt:19)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation$execute$1.invoke(RetransformInlineInstrumentation.kt:16)
+	at io.mockk.proxy.common.transformation.ClassTransformationSpecMap.applyTransformation(ClassTransformationSpecMap.kt:41)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation.execute(RetransformInlineInstrumentation.kt:16)
+	at io.mockk.proxy.jvm.ProxyMaker.inline(ProxyMaker.kt:90)
+	at io.mockk.proxy.jvm.ProxyMaker.proxy(ProxyMaker.kt:34)
+	at io.mockk.impl.instantiation.JvmMockFactory.newProxy(JvmMockFactory.kt:34)
+	at io.mockk.impl.instantiation.AbstractMockFactory.newProxy$default(AbstractMockFactory.kt:24)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory$ConstructorMock.&lt;init&gt;(JvmConstructorMockFactory.kt:55)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory$ConstructorMock.&lt;init&gt;(JvmConstructorMockFactory.kt:35)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory$ConstructorMockVariant.getConstructorMock(JvmConstructorMockFactory.kt:121)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory$ConstructorMockVariant.getRepresentative(JvmConstructorMockFactory.kt:115)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory.mockPlaceholder(JvmConstructorMockFactory.kt:266)
+	at io.mockk.MockKGateway$ConstructorMockFactory$DefaultImpls.mockPlaceholder$default(GatewayAPI.kt:95)
+	at com.ricoh.printservice.PrintServiceTest$RicohPrintService should send data to printer via socket$1.invoke(PrintServiceTest.kt:183)
+	at com.ricoh.printservice.PrintServiceTest$RicohPrintService should send data to printer via socket$1.invoke(PrintServiceTest.kt:129)
+	at io.mockk.impl.eval.RecordedBlockEvaluator$record$block$1.invoke(RecordedBlockEvaluator.kt:24)
+	at io.mockk.impl.eval.RecordedBlockEvaluator$enhanceWithRethrow$1.invoke(RecordedBlockEvaluator.kt:76)
+	at io.mockk.impl.recording.JvmAutoHinter.autoHint(JvmAutoHinter.kt:23)
+	at io.mockk.impl.eval.RecordedBlockEvaluator.record(RecordedBlockEvaluator.kt:39)
+	at io.mockk.impl.eval.EveryBlockEvaluator.every(EveryBlockEvaluator.kt:30)
+	at io.mockk.MockKDsl.internalEvery(API.kt:94)
+	at io.mockk.MockKKt.every(MockK.kt:143)
+	at com.ricoh.printservice.PrintServiceTest.RicohPrintService should send data to printer via socket(PrintServiceTest.kt:129)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:54)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:183)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+Apr 01, 2026 6:48:20 PM io.mockk.impl.log.JULLogger warn
+WARNING: Failed to transform class java/io/Closeable
+java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at io.mockk.proxy.jvm.transformation.InliningClassTransformer.transform(InliningClassTransformer.kt:81)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at io.mockk.proxy.jvm.transformation.JvmInlineInstrumentation.retransform(JvmInlineInstrumentation.kt:28)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation$execute$1.invoke(RetransformInlineInstrumentation.kt:19)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation$execute$1.invoke(RetransformInlineInstrumentation.kt:16)
+	at io.mockk.proxy.common.transformation.ClassTransformationSpecMap.applyTransformation(ClassTransformationSpecMap.kt:41)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation.execute(RetransformInlineInstrumentation.kt:16)
+	at io.mockk.proxy.jvm.ProxyMaker.inline(ProxyMaker.kt:90)
+	at io.mockk.proxy.jvm.ProxyMaker.proxy(ProxyMaker.kt:34)
+	at io.mockk.impl.instantiation.JvmMockFactory.newProxy(JvmMockFactory.kt:34)
+	at io.mockk.impl.instantiation.AbstractMockFactory.newProxy$default(AbstractMockFactory.kt:24)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory$ConstructorMock.&lt;init&gt;(JvmConstructorMockFactory.kt:55)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory$ConstructorMock.&lt;init&gt;(JvmConstructorMockFactory.kt:35)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory$ConstructorMockVariant.getConstructorMock(JvmConstructorMockFactory.kt:121)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory$ConstructorMockVariant.getRepresentative(JvmConstructorMockFactory.kt:115)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory.mockPlaceholder(JvmConstructorMockFactory.kt:266)
+	at io.mockk.MockKGateway$ConstructorMockFactory$DefaultImpls.mockPlaceholder$default(GatewayAPI.kt:95)
+	at com.ricoh.printservice.PrintServiceTest$RicohPrintService should send data to printer via socket$1.invoke(PrintServiceTest.kt:183)
+	at com.ricoh.printservice.PrintServiceTest$RicohPrintService should send data to printer via socket$1.invoke(PrintServiceTest.kt:129)
+	at io.mockk.impl.eval.RecordedBlockEvaluator$record$block$1.invoke(RecordedBlockEvaluator.kt:24)
+	at io.mockk.impl.eval.RecordedBlockEvaluator$enhanceWithRethrow$1.invoke(RecordedBlockEvaluator.kt:76)
+	at io.mockk.impl.recording.JvmAutoHinter.autoHint(JvmAutoHinter.kt:23)
+	at io.mockk.impl.eval.RecordedBlockEvaluator.record(RecordedBlockEvaluator.kt:39)
+	at io.mockk.impl.eval.EveryBlockEvaluator.every(EveryBlockEvaluator.kt:30)
+	at io.mockk.MockKDsl.internalEvery(API.kt:94)
+	at io.mockk.MockKKt.every(MockK.kt:143)
+	at com.ricoh.printservice.PrintServiceTest.RicohPrintService should send data to printer via socket(PrintServiceTest.kt:129)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:54)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:183)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+Apr 01, 2026 6:48:20 PM io.mockk.impl.log.JULLogger warn
+WARNING: Failed to transform class java/lang/AutoCloseable
+java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at io.mockk.proxy.jvm.transformation.InliningClassTransformer.transform(InliningClassTransformer.kt:81)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at io.mockk.proxy.jvm.transformation.JvmInlineInstrumentation.retransform(JvmInlineInstrumentation.kt:28)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation$execute$1.invoke(RetransformInlineInstrumentation.kt:19)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation$execute$1.invoke(RetransformInlineInstrumentation.kt:16)
+	at io.mockk.proxy.common.transformation.ClassTransformationSpecMap.applyTransformation(ClassTransformationSpecMap.kt:41)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation.execute(RetransformInlineInstrumentation.kt:16)
+	at io.mockk.proxy.jvm.ProxyMaker.inline(ProxyMaker.kt:90)
+	at io.mockk.proxy.jvm.ProxyMaker.proxy(ProxyMaker.kt:34)
+	at io.mockk.impl.instantiation.JvmMockFactory.newProxy(JvmMockFactory.kt:34)
+	at io.mockk.impl.instantiation.AbstractMockFactory.newProxy$default(AbstractMockFactory.kt:24)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory$ConstructorMock.&lt;init&gt;(JvmConstructorMockFactory.kt:55)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory$ConstructorMock.&lt;init&gt;(JvmConstructorMockFactory.kt:35)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory$ConstructorMockVariant.getConstructorMock(JvmConstructorMockFactory.kt:121)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory$ConstructorMockVariant.getRepresentative(JvmConstructorMockFactory.kt:115)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory.mockPlaceholder(JvmConstructorMockFactory.kt:266)
+	at io.mockk.MockKGateway$ConstructorMockFactory$DefaultImpls.mockPlaceholder$default(GatewayAPI.kt:95)
+	at com.ricoh.printservice.PrintServiceTest$RicohPrintService should send data to printer via socket$1.invoke(PrintServiceTest.kt:183)
+	at com.ricoh.printservice.PrintServiceTest$RicohPrintService should send data to printer via socket$1.invoke(PrintServiceTest.kt:129)
+	at io.mockk.impl.eval.RecordedBlockEvaluator$record$block$1.invoke(RecordedBlockEvaluator.kt:24)
+	at io.mockk.impl.eval.RecordedBlockEvaluator$enhanceWithRethrow$1.invoke(RecordedBlockEvaluator.kt:76)
+	at io.mockk.impl.recording.JvmAutoHinter.autoHint(JvmAutoHinter.kt:23)
+	at io.mockk.impl.eval.RecordedBlockEvaluator.record(RecordedBlockEvaluator.kt:39)
+	at io.mockk.impl.eval.EveryBlockEvaluator.every(EveryBlockEvaluator.kt:30)
+	at io.mockk.MockKDsl.internalEvery(API.kt:94)
+	at io.mockk.MockKKt.every(MockK.kt:143)
+	at com.ricoh.printservice.PrintServiceTest.RicohPrintService should send data to printer via socket(PrintServiceTest.kt:129)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:54)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:183)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+Apr 01, 2026 6:48:20 PM io.mockk.impl.log.JULLogger warn
+WARNING: Failed to transform class java/net/Socket
+java.lang.IllegalArgumentException: Java 23 (67) is not supported by the current version of Byte Buddy which officially supports Java 21 (65) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:96)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4011)
+	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2224)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4055)
+	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3739)
+	at io.mockk.proxy.jvm.transformation.InliningClassTransformer.transform(InliningClassTransformer.kt:81)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:242)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
+	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:225)
+	at io.mockk.proxy.jvm.transformation.JvmInlineInstrumentation.retransform(JvmInlineInstrumentation.kt:28)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation$doCancel$1.invoke(RetransformInlineInstrumentation.kt:38)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation$doCancel$1.invoke(RetransformInlineInstrumentation.kt:32)
+	at io.mockk.proxy.common.transformation.ClassTransformationSpecMap.applyTransformation(ClassTransformationSpecMap.kt:41)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation.doCancel(RetransformInlineInstrumentation.kt:32)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation.access$doCancel(RetransformInlineInstrumentation.kt:6)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation$execute$1$1.invoke(RetransformInlineInstrumentation.kt:17)
+	at io.mockk.proxy.common.transformation.RetransformInlineInstrumentation$execute$1$1.invoke(RetransformInlineInstrumentation.kt:17)
+	at io.mockk.proxy.common.CancelableResult.cancel(CancelableResult.kt:22)
+	at io.mockk.proxy.common.CancelableResult$alsoOnCancel$1.invoke(CancelableResult.kt:30)
+	at io.mockk.proxy.common.CancelableResult$alsoOnCancel$1.invoke(CancelableResult.kt:29)
+	at io.mockk.proxy.common.CancelableResult.cancel(CancelableResult.kt:22)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory$ConstructorInvocationHandler.doCancel(JvmConstructorMockFactory.kt:242)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory$ConstructorInvocationHandler.access$doCancel(JvmConstructorMockFactory.kt:155)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory$ConstructorInvocationHandler$push$2.invoke(JvmConstructorMockFactory.kt:217)
+	at io.mockk.impl.instantiation.JvmConstructorMockFactory$ConstructorInvocationHandler$push$2.invoke(JvmConstructorMockFactory.kt:216)
+	at io.mockk.MockKCancellationRegistry$RegistryPerType.cancelAll(API.kt:2440)
+	at io.mockk.MockKCancellationRegistry.cancelAll(API.kt:2469)
+	at com.ricoh.printservice.PrintServiceTest.tearDown(PrintServiceTest.kt:265)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.RunAfters.invokeMethod(RunAfters.java:46)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:54)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:183)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 9.0-milestone-1</a> at Apr 1, 2026, 6:48:20 PM</p>
+</div>
+</div>
+</body>
+</html>

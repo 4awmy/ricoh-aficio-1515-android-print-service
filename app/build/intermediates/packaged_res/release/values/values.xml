@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ricoh Print Service</string>
+    <string name="config_title">Printer Configuration</string>
+    <string name="invalid_ip_error">Please enter a valid IP address</string>
+    <string name="ip_address_hint">e.g. 192.168.0.50</string>
+    <string name="ip_address_label">Printer IP Address</string>
+    <string name="ip_saved_success">IP Address saved successfully</string>
+    <string name="save_button">Save</string>
+    <style name="Theme.RicohPrintService" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#D32F2F</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#757575</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+</resources>

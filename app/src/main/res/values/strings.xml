@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ricoh Print Service</string>
+    <string name="config_title">Printer Configuration</string>
+    <string name="ip_address_label">Printer IP Address</string>
+    <string name="ip_address_hint">e.g. 192.168.0.50</string>
+    <string name="save_button">Save</string>
+    <string name="ip_saved_success">IP Address saved successfully</string>
+    <string name="invalid_ip_error">Please enter a valid IP address</string>
+</resources>
