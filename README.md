@@ -37,5 +37,3 @@ Since the Ricoh Aficio 1515 (2005 model) lacks modern AirPrint/Mopria support, w
 3.  Select **Ricoh Aficio 1515** from the printer list.
 4.  Tap the print icon!
 
----
-*Developed autonomously via Gemini CLI Maestro for Omar Hossam.*
