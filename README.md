@@ -1,4 +1,6 @@
-# Ricoh Aficio 1515 Android Print Service
+# Ricoh Aficio 1515 Android Print Service: The Dinosaur Whisperer
+
+**Why did we build this?** Because this 2005 legend is older than most social media platforms and spent the last few hours throwing hexadecimal tantrums and printing blank-page protests. After surviving a literal ocean of garbage text and convincing this dinosaur that it's no longer the era of flip phones and MySpace, we built this plugin to force-feed it modern documents. It’s basically a universal translator for a printer that thinks it's still 2005.
 
 A custom Android Print Service plugin specifically designed for the legacy **Ricoh Aficio 1515** printer. This plugin allows direct, wireless printing from any Android application using the standard system print menu.
 
